@@ -19,7 +19,7 @@ use App\Http\Controllers\LogoutController;
 
 Route::get('/', function () {
     return view('blog.index');
-});
+})->name('index');
 
 
 Route::get('/crear-cuenta', [RegisterController::class, 'index'])->name('register');

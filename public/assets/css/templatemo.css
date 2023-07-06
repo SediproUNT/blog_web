@@ -54,7 +54,7 @@ body, ul, li, p, a, label, input, div {
 
 /* General */
 .logo {
-    font-weight: 500 !important;
+    width: 20rem;
 }
 
 .text-warning {
@@ -109,7 +109,15 @@ body, ul, li, p, a, label, input, div {
 }
 
 #templatemo_nav_top * {
-    font-size: .9em !important;
+    font-size: .95rem !important;
+}
+
+#templatemo_nav_top #nav-info-icons a {
+    color: #fff;
+}
+
+#templatemo_nav_top #nav-info-icons i{
+    color: #fff;
 }
 
 #templatemo_main_nav a {

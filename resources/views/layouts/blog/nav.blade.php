@@ -2,9 +2,10 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand logo h1 align-self-center" style="color:#1F3973" href="index.html">
-            Sedipro
+        <a class="navbar-brand logo h1 align-self-center" style="color:#1F3973" href="{{ route('index') }}">
+            <img src="./assets/img/logo-sedipro.png" class="img-fluid" alt="Logo-SediproUNT"/>
         </a>
+
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,7 +18,7 @@
                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">Inicio</a>
+                        <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
@@ -46,9 +47,6 @@
                 {{-- Botones --}}
                 <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                     <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                 </a>
                 <a class="nav-icon position-relative text-decoration-none" href="{{ route('login') }}">
                     <i class="fa fa-fw fa-user text-dark mr-3"></i>

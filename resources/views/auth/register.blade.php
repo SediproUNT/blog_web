@@ -13,8 +13,7 @@
         <div class="col-lg-5 col-12">
             <div id="auth-left">
                 <div class="auth-logo">
-                    {{-- <a href="index.html"><img src="./assets/compiled/svg/logo.svg" alt="Logo"></a> --}}
-                    <a href="index.html"><img src="" alt="Logo"></a>
+                    <a href="index.html"><img src="./assets/img/logo-sedipro.png" class="img-fluid" alt="Logo-SediproUNT"></a>
                 </div>
                 <h1 class="auth-title">Registrate</h1>
                 {{-- <p class="auth-subtitle mb-5">Input your data to register to our website.</p> --}}

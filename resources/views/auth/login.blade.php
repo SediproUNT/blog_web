@@ -15,7 +15,6 @@
             <div id="auth-left">
                 <div class="auth-logo">
                     <a href="index.html"><img src="./assets/img/logo-sedipro.png" class="img-fluid" alt="Logo-SediproUNT"></a>
-                    <!-- {{-- <a href="index.html"><img src="./assets/compiled/svg/logo.svg" alt="Logo"></a> --}} -->
                 </div>
                 <h1 class="auth-title">Iniciar Sesión</h1>
                 {{-- <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p> --}}
