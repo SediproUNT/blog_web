@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="row p-5">
                     <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        {{-- <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="Imagen 01"> --}}
+                        {{-- <img class="img-fluid" src="{{asset('assets/img/banner_img_01.jpg')}}" alt="Imagen 01"> --}}
                         <img class="img-fluid" src="" alt="Imagen 01">
                     </div>
                     <div class="col-lg-6 mb-0 d-flex align-items-center">
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row p-5">
                     <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="Imagen 02">
+                        <img class="img-fluid" src="{{asset('assets/img/banner_img_02.jpg')}}" alt="Imagen 02">
                     </div>
                     <div class="col-lg-6 mb-0 d-flex align-items-center">
                         <div class="text-align-left align-self-center">
@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="row p-5">
                     <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="Imagen 02">
+                        <img class="img-fluid" src="{{asset('assets/img/banner_img_02.jpg')}}" alt="Imagen 02">
                     </div>
                     <div class="col-lg-6 mb-0 d-flex align-items-center">
                         <div class="text-align-left align-self-center">
