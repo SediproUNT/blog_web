@@ -231,75 +231,28 @@ body, ul, li, p, a, label, input, div {
     color: #000 !important;
 }
 
-/* Services */
-.services-icon-wap {
-    transition: .3s;
-}
 
-.services-icon-wap:hover, .services-icon-wap:hover i {
-    color: #fff;
-}
-
-.services-icon-wap:hover {
-    background: #35569e;
-}
-
-/* Contact map */
-.leaflet-control a, .leaflet-control {
-    font-size: 10px !important;
-}
-
-.form-control {
-    border: 1px solid #e8e8e8;
-}
 
 /* Footer */
-#tempaltemo_footer a {
+
+.footer-icons{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-icons a {
     color: #dcdde1;
+    font-size: 1.8rem !important;
 }
 
-#tempaltemo_footer a:hover {
-    color: #68bb7d;
+.footer-icons a:hover {
+    transform: scale(1.25) translateY(-1.5px);
+    transition-duration: 0.3s;
 }
 
-#tempaltemo_footer ul.footer-link-list li {
-    padding-top: 10px;
-}
-
-#tempaltemo_footer ul.footer-icons li {
-    width: 2.6em;
-    height: 2.6em;
-    line-height: 2.6em;
-}
-
-#tempaltemo_footer ul.footer-icons li:hover {
-    background-color: #cfd6e1;
-    transition: .5s;
-}
-
-#tempaltemo_footer ul.footer-icons li:hover i {
-    color: #212934;
-    transition: .5s;
-}
-
-#tempaltemo_footer .border-light {
-    border-color: #2d343f !important;
-}
-
-/*
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-*/
-/* Small devices (landscape phones, 576px and up)*/
-.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
-    font-size: 12px !important;
-}
-
-.product-wap .product-color-dot {
-    width: 6px;
-    height: 6px;
-}
-
+/*// Medium devices (celphone, 768px and up)*/
 @media (min-width: 576px) {
     .tempaltemo-carousel .h1 {
         font-size: 1em !important;

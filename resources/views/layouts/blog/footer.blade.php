@@ -1,99 +1,44 @@
 <!-- Start Footer -->
 <footer style="background: linear-gradient(180deg, rgba(31,44,115,1) 42%, rgba(9,68,121,1) 93%);">
     <div class="container">
-        <div class="row">
+        <div class="row mb-2 border-botom">
 
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-info border-bottom pb-3 border-light logo">Zay Shop</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li>
-                        <i class="fas fa-map-marker-alt fa-fw"></i>
-                        123 Consectetur at ligula 10660
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-fw"></i>
-                        <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope fa-fw"></i>
-                        <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                    </li>
-                </ul>
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="{{asset('assets/img/logo-dark.png')}}" class="w-50 img-fluid" style="object-fit: contain;" alt="logo-sedipro">
             </div>
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                    <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                    <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                </ul>
+                <h2 class="h3 text-light pb-3 border-light fw-bold">Dirección:</h2>
+                <p class="text-light"><i class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</p>
+
+                <h2 class="h3 text-light pb-3 border-light fw-bold">Contacto:</h2>
+                <p class="text-light"><i class="fa fa-phone-alt"></i> +51 970 153 565</p>
+                <p class="text-light">
+                    <i class="fa fa-envelope fa-fw"></i>
+                    <a class="text-decoration-none" href="mailto:sedipro@unitru.edu.pe"> sedipro@unitru.edu.pe </a>
+                </p>
             </div>
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">About Us</a></li>
-                    <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                    <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="#">Contact</a></li>
-                </ul>
+                <h2 class="h3 text-light b-3 border-light fw-bold">Síguenos en:</h2>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/SediproUNT" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a href="https://www.instagram.com/sediprount/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a href="https://www.youtube.com/@SEDIPROUNT" target="_blank"><i class="fab fa-youtube fa-sm fa-fw me-2"></i></a>
+                    <a href="https://www.linkedin.com/company/sediprount/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
             </div>
 
         </div>
 
-        <div class="row text-light mb-4">
+        <div class="row text-light">
             <div class="col-12 mb-3">
                 <div class="w-100 my-3 border-top border-light"></div>
+                <p class="text-center text-light">
+                        Copyright &copy; 2023 SEDIPRO UNT
+                </p>
             </div>
-            <div class="col-auto me-auto">
-                <ul class="list-inline text-left footer-icons">
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank"
-                            href="https://www.facebook.com/SediproUNT"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank"
-                            href="https://www.instagram.com/sediprount/"><i
-                                class="fab fa-instagram fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank"
-                            href="https://www.youtube.com/@SEDIPROUNT"><i class="fab fa-youtube fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank"
-                            href="https://www.linkedin.com/company/sediprount/"><i
-                                class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <label class="sr-only" for="subscribeEmail">Email address</label>
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
-                        placeholder="Email address">
-                    <div class="input-group-text btn-success text-light">Subscribe</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="w-100 bg-black py-3">
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-12">
-                    <p class="text-left text-light">
-                        Copyright &copy; 2021 Company Name
-                        | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                    </p>
-                </div>
-            </div>
+  
         </div>
     </div>
 
