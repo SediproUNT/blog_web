@@ -25,37 +25,38 @@ Table of contents
 16. Extra large devices (large desktops, 1200px and up)
 --------------------------------------------- */
 
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 /* Typography */
 body, ul, li, p, a, label, input, div {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px !important;
+    font-size: 1rem !important;
     font-weight: 300 !important;
 }
 
 .h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 48px !important;
+    font-size: 3rem !important;
     font-weight: 200 !important;
 }
 
 .h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 30px !important;
+    font-size: 2rem !important;
     font-weight: 300;
 }
 
 .h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px !important;
+    font-size: 1.5rem !important;
 }
 
 /* General */
-.logo {
-    width: 20rem;
-}
 
 .text-warning {
     color: #ede861 !important;
@@ -70,7 +71,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .text-light {
-    color: #cfd6e1 !important;
+    color: #e9eef5 !important;
 }
 
 .bg-dark {
@@ -94,43 +95,55 @@ body, ul, li, p, a, label, input, div {
     border-color: #35569e !important;
 }
 
-.pagination .page-link:hover {
-    color: #000;
-}
-
-.pagination .page-link:hover, .pagination .page-link.active {
-    background-color: #35569e;
-    color: #fff;
-}
-
 /* Nav */
 #templatemo_nav_top {
-    min-height: 40px;
+    background: rgb(31,57, 115);
+    background: -moz-radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
+    background: -webkit-radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
+    background: radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
+    padding: .9rem;
 }
 
-#templatemo_nav_top * {
-    font-size: .95rem !important;
-}
-
-#templatemo_nav_top #nav-info-icons a {
+#templatemo_nav_top #nav-info-icons a,
+#templatemo_nav_top #nav-info-icons i,
+#templatemo_nav_top #nav-social-icons a,
+#templatemo_nav_top #nav-social-icons i{
     color: #fff;
+    font-size: .99rem !important;
 }
 
-#templatemo_nav_top #nav-info-icons i{
-    color: #fff;
+#templatemo_nav a.logo{
+    width: 20rem;
+    padding: .95rem;
 }
+
+#templatemo_footer .logo {
+    width: 24rem;
+    padding: 1.5rem;
+}
+
 
 #templatemo_main_nav a {
     color: #212934;
+    font-weight: 500 !important;
 }
 
 #templatemo_main_nav a:hover {
-    color: #35569e;
+    color: rgb(31,57, 115);
 }
 
-#templatemo_main_nav .navbar .nav-icon {
-    margin-right: 20px;
+#templatemo_main_nav .nav-icon {
+    background-color: #35569e !important;
+    padding: .5rem 1rem!important;
+    border-radius: 1.2rem!important;
+    cursor: pointer!important;
+    text-align: center;
 }
+
+#templatemo_main_nav .nav-icon:hover{
+    background-color: rgb(31,57, 115)!important;
+}
+
 
 /* Hero Carousel */
 #template-mo-zay-hero-carousel {
@@ -231,75 +244,28 @@ body, ul, li, p, a, label, input, div {
     color: #000 !important;
 }
 
-/* Services */
-.services-icon-wap {
-    transition: .3s;
-}
 
-.services-icon-wap:hover, .services-icon-wap:hover i {
-    color: #fff;
-}
-
-.services-icon-wap:hover {
-    background: #35569e;
-}
-
-/* Contact map */
-.leaflet-control a, .leaflet-control {
-    font-size: 10px !important;
-}
-
-.form-control {
-    border: 1px solid #e8e8e8;
-}
 
 /* Footer */
-#tempaltemo_footer a {
+
+.footer-icons{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-icons a {
     color: #dcdde1;
+    font-size: 1.8rem !important;
 }
 
-#tempaltemo_footer a:hover {
-    color: #68bb7d;
+.footer-icons a:hover {
+    transform: scale(1.25) translateY(-1.5px);
+    transition-duration: 0.3s;
 }
 
-#tempaltemo_footer ul.footer-link-list li {
-    padding-top: 10px;
-}
-
-#tempaltemo_footer ul.footer-icons li {
-    width: 2.6em;
-    height: 2.6em;
-    line-height: 2.6em;
-}
-
-#tempaltemo_footer ul.footer-icons li:hover {
-    background-color: #cfd6e1;
-    transition: .5s;
-}
-
-#tempaltemo_footer ul.footer-icons li:hover i {
-    color: #212934;
-    transition: .5s;
-}
-
-#tempaltemo_footer .border-light {
-    border-color: #2d343f !important;
-}
-
-/*
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-*/
-/* Small devices (landscape phones, 576px and up)*/
-.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
-    font-size: 12px !important;
-}
-
-.product-wap .product-color-dot {
-    width: 6px;
-    height: 6px;
-}
-
+/*// Medium devices (celphone, 768px and up)*/
 @media (min-width: 576px) {
     .tempaltemo-carousel .h1 {
         font-size: 1em !important;
