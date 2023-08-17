@@ -1,10 +1,10 @@
 <!-- Start Footer -->
-<footer style="background: linear-gradient(180deg, rgba(31,44,115,1) 42%, rgba(9,68,121,1) 93%);">
+<footer style="background: linear-gradient(180deg, rgba(31,44,115,1) 42%, rgba(9,68,121,1) 93%);" id="templatemo_footer">
     <div class="container">
         <div class="row mb-2 border-botom">
 
-            <div class="col-md-4 d-flex justify-content-center">
-                <img src="{{asset('assets/img/logo-dark.png')}}" class="w-50 img-fluid" style="object-fit: contain;" alt="logo-sedipro">
+            <div class="col-md-4 d-flex justify-content-center flex-column">
+                <img src="{{asset('assets/img/logo-dark.png')}}" class="img-fluid logo" style="object-fit: contain;" alt="logo-sedipro">
             </div>
 
             <div class="col-md-4 pt-5">

@@ -112,10 +112,16 @@ body, ul, li, p, a, label, input, div {
     font-size: .99rem !important;
 }
 
-#templatemo_nav a.logo {
+#templatemo_nav a.logo{
     width: 20rem;
     padding: .95rem;
 }
+
+#templatemo_footer .logo {
+    width: 24rem;
+    padding: 1.5rem;
+}
+
 
 #templatemo_main_nav a {
     color: #212934;
