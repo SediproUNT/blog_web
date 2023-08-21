@@ -265,6 +265,38 @@ body, ul, li, p, a, label, input, div {
     transition-duration: 0.3s;
 }
 
+/* Contacto*/
+
+.contact {
+    margin-bottom: 6.5rem;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e9eef5 ;
+    font-size: 1.8rem !important;
+    background: linear-gradient(to left bottom, #1F3973, rgb(99, 102, 241));
+    height: 5.625rem;
+    width: 5.625rem;
+    border-radius: 50%;
+}
+
+.contact-info p{
+    margin-bottom: 0rem;
+}
+
+.contact-info-title {
+    font-weight: 600 !important;
+    color: #1F3973;
+}
+
+.contact-socials a{
+    color: #1F3973;
+}
+
+
 /*// Medium devices (celphone, 768px and up)*/
 @media (min-width: 576px) {
     .tempaltemo-carousel .h1 {

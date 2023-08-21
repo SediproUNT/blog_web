@@ -13,10 +13,7 @@
 
                 <h2 class="h3 text-light pb-3 border-light fw-bold">Contacto:</h2>
                 <p class="text-light"><i class="fa fa-phone-alt"></i> +51 970 153 565</p>
-                <p class="text-light">
-                    <i class="fa fa-envelope fa-fw"></i>
-                    <a class="text-decoration-none" href="mailto:sedipro@unitru.edu.pe"> sedipro@unitru.edu.pe </a>
-                </p>
+                <p class="text-light"><i class="fa fa-envelope fa-fw"></i>  sedipro@unitru.edu.pe</p>
             </div>
 
             <div class="col-md-4 pt-5">

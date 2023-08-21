@@ -31,7 +31,7 @@
                                     <span>{{ substr($post->body, 0, 300) }}</span>
                                     <span id="readMore{{ $post->id }}" style="display: none;">{{ substr($post->body, 300) }}</span>
                                     @if (strlen($post->body) > 300)
-                                        <a href="javascript:void(0);" class="read-more-link" onclick="toggleReadMore({{ $post->id }})">Ver más</a>
+                                        <a href="javascript:void(0);" class="read-more-link" onclick="">Ver más</a>
                                     @endif
                                 </p>
                             </div>
@@ -40,7 +40,7 @@
                             </a>
                         </div>
                     </div>
-                    @if ($loop->iteration % 2 == 0)
+                    @if ($loop->iteration % 3 == 0)
             </div>
             <div class="row justify-content-center">
                 @endif
