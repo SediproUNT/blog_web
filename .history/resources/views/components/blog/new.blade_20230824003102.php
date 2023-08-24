@@ -64,7 +64,8 @@
         }
 
         .cont .card-image {
-            padding: 1rem 1rem;
+            padding: 1rem 1rem 1.5rem 1rem;
+            margin-right: 0.5rem;
         }
 
 
@@ -73,13 +74,9 @@
             margin-left: 1rem;
         }
 
-        .cont .card-body p, .cont .card-body button {
-            margin-left: 1rem
-        }
-
         /*--------------------------------------------------------------
-                                                                        # About
-                                                                        --------------------------------------------------------------*/
+                                                                    # About
+                                                                    --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -234,7 +231,7 @@
                     <aside class="cont rounded p-4 mb-4">
                         <span class="font-weight-medium">Noticias Relacionadas</span>
                     </aside>
-                    <div class="card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
+                    <div class="cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
 
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">

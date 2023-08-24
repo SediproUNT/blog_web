@@ -63,23 +63,9 @@
             background-color: #3453a228
         }
 
-        .cont .card-image {
-            padding: 1rem 1rem;
-        }
-
-
-        .cont .card-image img {
-            border-radius: 1rem;
-            margin-left: 1rem;
-        }
-
-        .cont .card-body p, .cont .card-body button {
-            margin-left: 1rem
-        }
-
         /*--------------------------------------------------------------
-                                                                        # About
-                                                                        --------------------------------------------------------------*/
+                                                                    # About
+                                                                    --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -227,45 +213,44 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
 
-            <div class="col-12 col-lg-4">
-                <section>
-                    <aside class="cont rounded p-4 mb-4">
-                        <span class="font-weight-medium">Noticias Relacionadas</span>
-                    </aside>
-                    <div class="card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
+                <div class="col-12 col-lg-4">
+                    <section>
+                        <aside class="cont rounded p-4 mb-4">
+                            <span class="font-weight-medium">Noticias Relacionadas</span>
+                        </aside>
+                        <div class="cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
 
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                <img src="assets/images/widgets/sm-2.jpg" alt="" class="img-fluid rounded-xl">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                    <img src="assets/images/widgets/sm-2.jpg" alt="" class="img-fluid rounded-xl">
 
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                <div class="h-100 d-flex flex-column p-3">
-                                    <div class="w-100">
-                                        <span
-                                            class="text-sm bg-success bg-opacity-10 text-success rounded font-weight-medium py-0 px-2 inline-block mb-3">Fashion</span>
-                                        <span class="text-dark font-weight-medium text-xs ms-2">23 August 2023</span>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                    <div class="h-100 d-flex flex-column p-3">
+                                        <div class="w-100">
+                                            <span
+                                                class="text-sm bg-success bg-opacity-10 text-success rounded font-weight-medium py-0 px-2 inline-block mb-3">Fashion</span>
+                                            <span class="text-dark font-weight-medium text-xs ms-2">23 August 2023</span>
+                                        </div>
+                                        <a href="#" class="text-lg font-weight-semibold text-secondary block">
+                                            This is the best Blogs card for your.
+                                        </a>
                                     </div>
-                                    <a href="#" class="text-lg font-weight-semibold text-secondary block">
-                                        This is the best Blogs card for your.
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                </section>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
 
 
-    {{-- <div class="container about"">
+        {{-- <div class="container about"">
         <div class="row gx-0">
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -300,7 +285,7 @@
 
 
 
-    {{-- <div class="container">
+        {{-- <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="bg-white bg-opacity-40 backdrop-blur-2xl rounded-2xl shadow-lg p-4 mb-4">
@@ -398,7 +383,7 @@
             </div>
         </div>
     </div> --}}
-@endsection
+    @endsection
 
-@section('scripts')
-@endsection
+    @section('scripts')
+    @endsection

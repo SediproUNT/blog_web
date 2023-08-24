@@ -231,10 +231,10 @@
 
             <div class="col-12 col-lg-4">
                 <section>
-                    <aside class="cont rounded p-4 mb-4">
+                    <aside class=" card-contentidocont rounded p-4 mb-4">
                         <span class="font-weight-medium">Noticias Relacionadas</span>
                     </aside>
-                    <div class="card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
+                    <div class=" card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
 
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">

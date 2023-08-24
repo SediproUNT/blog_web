@@ -35,51 +35,26 @@
             z-index: 2;
         }
 
-        .content-news h1,
-        .content-news li.breadcrumb-item.active,
-        .breadcrumb-item+.breadcrumb-item::before,
-        .content-news li.breadcrumb-item a {
-            color: #fff;
-            transition: ease-in-out 0.3s;
+        .content-news h1, .content-news li.breadcrumb-item.active,.breadcrumb-item+.breadcrumb-item::before, .content-news li.breadcrumb-item a{
+            color:#fff;
+            trans
         }
 
-        .content-news li.breadcrumb-item.active span:hover,
-        .content-news li.breadcrumb-item a:hover {
-            color: #3454a2;
+        .content-news li.breadcrumb-item.active span:hover, .content-news li.breadcrumb-item a:hover {
+            color:#3454a2;
             background: white;
             padding: 0.25rem 0.5rem;
             border-radius: 0.25rem;
         }
 
-        .card-contentido {
-            margin: 2rem 0;
-            border-radius: 1rem;
-            border: none;
-        }
-
 
         .cont {
-            /* background-color: #f6f9ff; */
-            background-color: #3453a228
-        }
-
-        .cont .card-image {
-            padding: 1rem 1rem;
-        }
-
-
-        .cont .card-image img {
-            border-radius: 1rem;
-            margin-left: 1rem;
-        }
-
-        .cont .card-body p, .cont .card-body button {
-            margin-left: 1rem
+            background-color: #f6f9ff;
         }
 
         /*--------------------------------------------------------------
-                                                                        # About
-                                                                        --------------------------------------------------------------*/
+                                                # About
+                                                --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -177,10 +152,9 @@
                 <div class="col-12 banner-box">
                     <header class="banner-heading content-news">
                         <h1 style="">Noticias Sedipranas</h1>
-                        <nav aria-label="breadcrumb" class="breadcrumb-header">
+                        <nav aria-label="breadcrumb" class="breadcrumb-header" >
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a style="text-decoration: none;"
-                                        href="{{ route('index') }}">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a style="text-decoration: none;" href="{{ route('index') }}">Dashboard</a></li>
                                 <li class="breadcrumb-item active" aria-current="page"><span>Posts</span></li>
                             </ol>
                         </nav>
@@ -207,26 +181,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="cont h-100 d-flex flex-column p-3 rounded">
+                    @foreach ($posts as $post)
+                        <article class="p-4 mb-4">
+                            <div class="h-100 d-flex flex-column justify-content-between">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
+                                    {{-- <img src="assets/images/widgets/sm-3.jpg" alt="" class="img-fluid rounded-xl"> --}}
+                                    <img class="img-fluid rounded-xl" src="{{ $post->image_url }}" alt="">
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-8">
+                                    <div class="w-100">
+                                        <span
+                                            class="text-sm bg-danger bg-opacity-10 text-danger rounded font-weight-medium py-1 px-2 inline-block mb-3">Health</span>
+                                        <span
+                                            class="text-dark font-weight-medium text-xs ms-2">{{ now()->formatLocalized('%d %B %Y') }}</span>
+                                    </div>
+                                    <a href="#"
+                                        class="text-xl mb-5 md:mb-0 font-spectral font-semibold text-dark block">
+                                        {{ $post->title }}
+                                    </a>
+                                    {{-- <div class="d-flex flex-wrap justify-content-between mt-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-8 h-8 rounded">
+                                                <img class="img-fluid rounded-circle" src="assets/images/users/avatar-1.jpg"
+                                                alt="logo">
 
-
-                @foreach ($posts as $post)
-                    <div class="card d-flex card-contentido cont">
-                        <div class="card-content row justify-content-center align-items-center">
-                            {{-- <img class="card-img-top img-fluid" src="./assets/compiled/jpg/origami.jpg" alt="Card image cap"
-                            style="height: 20rem" /> --}}
-                            <div class="col-4 card-image">
-                                <img class="img-fluid rounded-xl" src="{{ $post->image_url }}" alt="">
+                                            </div>
+                                            <div class="ms-2">
+                                                <a tabindex="0"
+                                                    class="cursor-pointer hover-text-secondary text-dark focus-text-secondary text-dark focus-underline">
+                                                    <h5 class="font-weight-medium text-sm">Fitbit Incorporation</h5>
+                                                </a>
+                                                <p tabindex="0" class="text-secondary text-xs font-weight-medium">San
+                                                    Diego,
+                                                    California</p>
+                                            </div>
+                                        </div>
+                                        <a href="#"
+                                            class="block text-secondary hover-text-primary text-decoration-underline text-decoration-dashed text-decoration-primary font-weight-medium">
+                                            Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                    </div> --}}
+                                </div>
                             </div>
-                            <div class="col-8 card-body">
-                                {{-- <h4 class="card-title">{{ $post->title }}</h4> --}}
-                                <p class="card-text">
-                                    {{ $post->body }}
-                                </p>
-                                <button class="btn btn-primary block">Ver noticia</button>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+                        </article>
+                    @endforeach
+                </div>
             </div>
 
             <div class="col-12 col-lg-4">
@@ -234,7 +240,7 @@
                     <aside class="cont rounded p-4 mb-4">
                         <span class="font-weight-medium">Noticias Relacionadas</span>
                     </aside>
-                    <div class="card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
+                    <div class="cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
 
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
