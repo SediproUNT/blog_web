@@ -98,7 +98,7 @@ body, ul, li, p, a, label, input, div {
 /* Nav */
 #templatemo_nav_top {
     background: rgb(31,57, 115);
-    background: -moz-radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
+    background: -moz-radial-gradient(circle at 48.7% 44.3%, #3454a2 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
     background: -webkit-radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
     background: radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
     padding: .9rem;
@@ -114,12 +114,10 @@ body, ul, li, p, a, label, input, div {
 
 #templatemo_nav a.logo{
     width: 20rem;
-    padding: .95rem;
 }
 
 #templatemo_footer .logo {
-    width: 24rem;
-    padding: 1.5rem;
+    width: 22.5rem;
 }
 
 

@@ -4,7 +4,7 @@
         <div class="row mb-2 border-botom">
 
             <div class="col-md-4 d-flex justify-content-center flex-column">
-                <img src="{{asset('assets/img/logo-dark.png')}}" class="img-fluid logo" style="object-fit: contain;" alt="logo-sedipro">
+                <img src="{{asset('assets/img/logo-sedipro-dark.png')}}" class="img-fluid logo" style="object-fit: contain;" alt="logo-sedipro">
             </div>
 
             <div class="col-md-4 pt-5">
