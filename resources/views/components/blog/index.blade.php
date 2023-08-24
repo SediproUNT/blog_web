@@ -86,6 +86,20 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+<<<<<<< HEAD
+                @foreach ($posts as $post)
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $post->title }}</h5>
+                                <p class="card-text" style="text-align: justify;">
+                                    <span>{{ substr($post->body, 0, 300) }}</span>
+                                    <span id="readMore{{ $post->id }}" style="display: none;">{{ substr($post->body, 300) }}</span>
+                                    @if (strlen($post->body) > 300)
+                                        <a href="javascript:void(0);" class="read-more-link" onclick="">Ver más</a>
+                                    @endif
+                                </p>
+=======
                 @foreach ($posts as $key => $post)
                     @if ($key < 6)
                         <!-- Mostrar solo los primeros 6 posts -->
@@ -107,9 +121,15 @@
                                     <img src="{{ $post->image_url }}" class="card-img-top" alt="{{ $post->title }}"
                                         style="max-width: 600px; height: auto;">
                                 </a>
+>>>>>>> 065ce4d282c8b8284f0dad8b9572f794077dec1c
                             </div>
                         </div>
+<<<<<<< HEAD
+                    </div>
+                    @if ($loop->iteration % 3 == 0)
+=======
                         @if (($key + 1) % 3 == 0)
+>>>>>>> 065ce4d282c8b8284f0dad8b9572f794077dec1c
             </div>
             <div class="row justify-content-center">
                 @endif

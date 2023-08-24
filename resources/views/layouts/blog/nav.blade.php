@@ -3,7 +3,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand logo" href="{{ route('index') }}">
-            <img src="/assets/img/logo-sedipro.png" class="img-fluid" alt="Logo-SediproUNT" />
+            <img src="/assets/img/logo-sedipro.png" class="img-fluid" alt="Logo-SediproUNT" fetchpriority="high"/>
         </a>
 
         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
