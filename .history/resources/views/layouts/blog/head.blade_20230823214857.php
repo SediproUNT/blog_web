@@ -6,8 +6,6 @@
 <link rel="preload" href="{{asset('assets/css/bootstrap.min.css')}}" as="style" crossorigin="anonymous">
 <link rel="preload" href="{{asset('assets/css/templatemo.css')}}" as="style" crossorigin="anonymous">
 <link rel="preload" href="{{asset('assets/css/fontawesome.min.css')}}" as="style" crossorigin="anonymous">
-<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('assets/css/templatemo.css')}}">
 <meta name="description" content="Sección Estudiantil de Dirección de Proyectos de la UNT">
 <!-- Load fonts style after rendering the layout styles -->
 <link rel="stylesheet"
