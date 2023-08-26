@@ -1,29 +1,8 @@
-/*
-
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
----------------------------------------------
-Table of contents
-------------------------------------------------
-1. Typography
-2. General
-3. Nav
-4. Hero Carousel
-5. Accordion
-6. Shop
-7. Product
-8. Carousel Hero
-9. Carousel Brand
-10. Services
-11. Contact map
-12. Footer
-13. Small devices (landscape phones, 576px and up)
-14. Medium devices (tablets, 768px and up)
-15. Large devices (desktops, 992px and up)
-16. Extra large devices (large desktops, 1200px and up)
---------------------------------------------- */
+:root{
+    --primary-color: #2A2D66;
+    --secondary-color: #672577;
+    --third-color: #3454a2;
+}
 
 *{
     box-sizing: border-box;
@@ -97,10 +76,10 @@ body, ul, li, p, a, label, input, div {
 
 /* Nav */
 #templatemo_nav_top {
-    background: rgb(31,57, 115);
-    background: -moz-radial-gradient(circle at 48.7% 44.3%, #3454a2 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
-    background: -webkit-radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
-    background: radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 200) 22.9%, rgb(31,57, 115) 76.7%, rgb(31, 57, 115) 100.2%);
+    background: var(--primary-color);
+    background: -moz-radial-gradient(circle at 49.7% 40.3%, var(--third-color) 22.9%, var(--primary-color) 76.7%, var(--primary-color) 100.2%);
+    background: -webkit-radial-gradient(circle at 49.7% 40.3%, var(--third-color) 22.9%, var(--primary-color) 76.7%, var(--primary-color) 100.2%);
+    background: radial-gradient(circle at 49.7% 40.3%, var(--third-color) 22.9%, var(--primary-color) 76.7%, var(--primary-color) 100.2%);
     padding: .9rem;
 }
 
@@ -159,7 +138,7 @@ body, ul, li, p, a, label, input, div {
 
 /* Shop */
 .shop-top-menu a:hover {
-    color: #35569e !important;
+    color: var(--primary-color) !important;
 }
 
 /* Product */
@@ -227,12 +206,12 @@ body, ul, li, p, a, label, input, div {
 /* Carousel Hero */
 #template-mo-zay-hero-carousel .carousel-indicators li {
     margin-top: -50px;
-    background-color: #1F3973;
+    background-color: var(--primary-color);
 }
 
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
-    color: #1F3973 !important;
+    color: var(--primary-color) !important;
     font-size: 2.8em !important;
 }
 
@@ -242,9 +221,37 @@ body, ul, li, p, a, label, input, div {
     color: #000 !important;
 }
 
+/* General Styles */
 
+.title-section {
+    font-weight: 900 !important;
+    color: var(--primary-color);
+}
+
+/* Card Styles */
+.news-card{
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-title{
+    color: var(--third-color);
+}
+
+.card-text{
+    text-align: justify;
+    color: var(--primary-color);
+    font-weight: 400 !important;
+}
 
 /* Footer */
+
+.footer{
+    background: linear-gradient(180deg, var(--primary-color) 42.3%, var(--third-color) 93%);
+    background: -moz-linear-gradient(180deg, var(--primary-color) 42.3%, var(--third-color) 93%);
+    background: -webkit-linear-gradient(180deg, var(--primary-color) 42.3%, var(--third-color) 93%);
+}
 
 .footer-icons{
     padding-top: 1rem;
@@ -275,7 +282,7 @@ body, ul, li, p, a, label, input, div {
     align-items: center;
     color: #e9eef5 ;
     font-size: 1.8rem !important;
-    background: linear-gradient(to left bottom, #1F3973, rgb(99, 102, 241));
+    background: linear-gradient(to left bottom, var(--third-color), var(--primary-color));
     height: 5.625rem;
     width: 5.625rem;
     border-radius: 50%;

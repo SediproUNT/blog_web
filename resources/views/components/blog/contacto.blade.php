@@ -67,7 +67,7 @@
         <div class="container py-5">
 
             <div class="col-lg-6 m-auto d-flex justify-content-center align-items-center">
-                <h1 class="h1" style="font-weight: 600 !important; color: #1F3973;">Contacto</h1>
+                <h1 class="h1 title-section">Contacto</h1>
             </div>
 
             <div class="row mt-5">
