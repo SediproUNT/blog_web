@@ -176,7 +176,7 @@
             <div class="row">
                 <div class="col-12 banner-box">
                     <header class="banner-heading content-news">
-                        <h1 style="">Noticias Sedipranas</h1>
+                        <h1>Noticias Sedipranas</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb-header">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a style="text-decoration: none;"

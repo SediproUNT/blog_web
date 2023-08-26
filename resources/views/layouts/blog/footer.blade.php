@@ -1,5 +1,5 @@
 <!-- Start Footer -->
-<footer style="background: linear-gradient(180deg, rgba(31,44,115,1) 42%, rgba(9,68,121,1) 93%);" id="templatemo_footer">
+<footer class="footer" id="templatemo_footer">
     <div class="container">
         <div class="row mb-2 border-botom">
 

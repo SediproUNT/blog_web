@@ -82,7 +82,7 @@
         <div class="container py-5">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"><strong>Noticias</strong></h1>
+                    <h1 class="h1 title-section">Noticias</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -90,10 +90,10 @@
                     @if ($key < 6)
                         <!-- Mostrar solo los primeros 6 posts -->
                         <div class="col-12 col-md-4 mb-4">
-                            <div class="card h-100 text-center">
+                            <div class="card h-100 text-center news-card">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text" style="text-align: justify;">
+                                    <p class="card-text">
                                         <span>{{ substr($post->body, 0, 300) }}</span>
                                         <span id="readMore{{ $post->id }}"
                                             style="display: none;">{{ substr($post->body, 300) }}</span>
@@ -119,7 +119,7 @@
             <!-- Botón "Más Noticias" -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <a href="{{ route('news.index') }}" class="btn btn-primary">Más Noticias</a>
+                    <a href="{{ route('news.index') }}" class="btn btn-primary mt-4">Más Noticias</a>
                 </div>
             </div>
         </div>
@@ -127,9 +127,9 @@
 
         {{-- Logros --}}
         <div class="container py-5">
-            <div class="row text-center py-3">
+            <div class="row text-center pb-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"><strong>'Nose'</strong></h1>
+                    <h1 class="h1 title-section">'Nose'</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
