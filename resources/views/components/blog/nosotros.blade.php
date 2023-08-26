@@ -67,13 +67,13 @@
         <div class="container py-5">
 
             <div class="col-lg-12 m-auto text-center my-4">
-                <span class="subtitle">QUIENES SOMOS</span>
+                <span class="subtitle">QUIÉNES SOMOS</span>
                 <h2 class="h1 title-section">Nosotros</h2>
             </div>
 
             <div class="row mb-5 nosotros">
 
-                <div class="col-lg-6 m-auto text-justify">
+                <div class="col-lg-6 text-justify">
                     <span class="text-nosotros">
                         Somos la Sección Estudiantil de Dirección de Proyectos de la UNT, equipo multidisciplinario
                         orientado a digundir las buenas prácticas en gestión de proyectos con métodología PMI y herramientas ágiles,
@@ -101,7 +101,7 @@
                     </div>
                 </div>
         
-                <div class="col-lg-6 m-auto">
+                <div class="col-lg-6">
                     <img src="/assets/img/logo-sedipro.png" alt="logo_sedipro" class="img-fluid">
                 </div>
 

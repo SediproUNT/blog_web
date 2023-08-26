@@ -131,58 +131,12 @@
 
     <section class="bg-light">
 
-        {{-- Noticias --}}
-        {{-- <div class="container py-5">
-            <div class="row text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1 title-section">Noticias</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                @foreach ($posts as $key => $post)
-                    @if ($key < 6)
-                        <!-- Mostrar solo los primeros 6 posts -->
-                        <div class="col-12 col-md-4 mb-4">
-                            <div class="card h-100 text-center news-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">
-                                        <span>{{ substr($post->body, 0, 300) }}</span>
-                                        <span id="readMore{{ $post->id }}"
-                                            style="display: none;">{{ substr($post->body, 300) }}</span>
-                                        @if (strlen($post->body) > 300)
-                                            <a href="javascript:void(0);" class="read-more-link"
-                                                onclick="toggleReadMore({{ $post->id }})">Ver más</a>
-                                        @endif
-                                    </p>
-                                </div>
-                                <a href="{{ route('posts.show', $post->id) }}">
-                                    <img src="{{ $post->image_url }}" class="card-img-top" alt="{{ $post->title }}"
-                                        style="max-width: 600px; height: auto;">
-                                </a>
-                            </div>
-                        </div>
-                        @if (($key + 1) % 3 == 0)
-            </div>
-            <div class="row justify-content-center">
-                @endif
-                @endif
-                @endforeach
-            </div>
-            <!-- Botón "Más Noticias" -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <a href="{{ route('news.index') }}" class="btn btn-primary mt-4">Más Noticias</a>
-                </div>
-            </div>
-        </div> --}}
-
         <div class="container">
             <div class="row align-items-center mil-mb-60-adapt">
-                <div class="col-12 col-md-6 col-xl-6">
-                    <h2 class="mil-mb-30">Noticias Sedipranas</h2>
+                <div class="col-12 col-md-6 col-xl-6 mt-5">
+                    <h2 class="h1 title-section">Noticias Sedipranas</h2>
                 </div>
-                <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-end">
+                <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-end mt-5">
                     <div class="mil-slider-nav mil-mb-30">
                         <div class="mil-slider-btn-prev mil-works-prev" tabindex="0" role="button"
                             aria-label="Previous slide">
@@ -196,21 +150,21 @@
                 </div>
             </div>
             <div
-                class="swiper swiper-container swiper-initialized swiper-horizontal mil-works-slider mil-mb-90 swiper-backface-hidden">
+                class="swiper swiper-container swiper-initialized swiper-horizontal mil-works-slider mil-mb-40 swiper-backface-hidden">
                 <div class="swiper-wrapper" id="swiper-wrapper-b2336b49791b3a6c" aria-live="polite">
                     @foreach ($posts as $post)
                         <div class="swiper-slide" role="group" aria-label="1 / 4">
-                            <a class="mil-card" href="{{ route('news.show', ['id' => $post->id]) }}">
-                                <div class="mil-cover-frame">
-                                    <img src="{{ $post->image_url }}" class="card-img-top" alt="{{ $post->title }}">
+                            <a class="mil-card news-card" href="{{ route('news.show', ['id' => $post->id]) }}">
+                                <div class="news-img">
+                                    <img src="{{ $post->image_url }}" class="img-fluid" alt="{{ $post->title }}">
                                 </div>
                                 <div class="mil-description">
-                                    <div class="mil-card-title">
-                                        <h4 class="mil-mb-20">{{ $post->title }}</h4>
+                                    <div>
+                                        <h4 class="card-title">{{ $post->title }}</h4>
                                         <h6>Fecha: <span class="mil-accent">{{ $post->created_at->format('d-m-Y') }}</span>
                                         </h6>
                                     </div>
-                                    <div class="mil-card-text">
+                                    <div class="card-text">
                                         <p>{{ \Illuminate\Support\Str::limit($post->body, 200) }}</p>
                                     </div>
                                 </div>
@@ -233,7 +187,7 @@
         <div class="container py-5">
             <div class="row text-center pb-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1 title-section">'Nose'</h1>
+                    <h1 class="h1 title-section">Logros</h1>
                 </div>
             </div>
             <div class="row justify-content-center">

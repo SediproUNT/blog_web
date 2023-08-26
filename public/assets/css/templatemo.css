@@ -229,17 +229,27 @@ body, ul, li, p, a, label, input, div {
 }
 
 /* Card Styles */
-.news-card{
-    border-radius: 1rem;
-    border: none;
-    box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+.news-img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    overflow: hidden;
+    height: 400px;
 }
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} 
 
 .card-title{
     color: var(--third-color);
 }
 
+
 .card-text{
+    width: 65%;
     text-align: justify;
     color: var(--primary-color);
     font-weight: 400 !important;

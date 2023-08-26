@@ -183,7 +183,7 @@
                         Sedipranas</span>
                     <h3 class="mil-mb-30">{{ $post->title }}</h3>
                     <p class="mil-mb-60">{{ $post->body }}</p>
-                    <img src="{{ $post->image_url }}" alt="">
+                    <img class="img-fluid" src="{{ $post->image_url }}" alt="">
 
                     {{-- <h3 class="mil-mb-30">Our Solution</h3>
                     <p class="mil-mb-60">There are many variations of passages of Lorem Ipsum available, but the majority
