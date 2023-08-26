@@ -301,6 +301,70 @@ body, ul, li, p, a, label, input, div {
     color: #1F3973;
 }
 
+/* Nosotros*/
+
+.nosotros{
+    padding-bottom: 6rem;
+    border-bottom: 1px solid var(--third-color);
+}
+
+.li{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.li .icon div{
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+}
+
+.li .icon i{
+    color: var(--primary-color);
+}
+
+.subtitle{
+    font-size:0.85rem; 
+    color:var(--secondary-color);
+    font-weight: bold;
+}
+
+.text-nosotros{
+    color: var(--primary-color);
+    font-weight: 400 !important;
+}
+
+.experience{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -2rem;
+    right: -1px;
+    background: var(--primary-color);
+    padding: .8rem;
+}
+
+.experience .year{
+    font-weight: 900;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+.experience .caption{
+    color: #fff;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
 
 /*// Medium devices (celphone, 768px and up)*/
 @media (min-width: 576px) {

@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col-12 banner-box">
                     <header class="banner-heading content-news">
-                        <h1 style="">Contacto</h1>
+                        <h1>Contacto</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb-header">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a style="text-decoration: none;"
@@ -66,9 +66,6 @@
     <section class="bg-light position-relative">
         <div class="container py-5">
 
-            <div class="col-lg-6 m-auto d-flex justify-content-center align-items-center">
-                <h1 class="h1 title-section">Contacto</h1>
-            </div>
 
             <div class="row mt-5">
                 <div class="col-md-6">
