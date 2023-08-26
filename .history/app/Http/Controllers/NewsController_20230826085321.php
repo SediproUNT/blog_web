@@ -16,7 +16,7 @@ class NewsController extends Controller
         //
 
         $logros = Logros::all();
-        $posts = Post::orderBy('created_at', 'desc')->paginate(4);
+        $posts = Post::paginate(4);
 
         return view('components.blog.new', compact('posts', 'logros'));
     }
