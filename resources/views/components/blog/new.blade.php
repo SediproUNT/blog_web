@@ -73,13 +73,14 @@
             margin-left: 1rem;
         }
 
-        .cont .card-body p, .cont .card-body button {
+        .cont .card-body p,
+        .cont .card-body button {
             margin-left: 1rem
         }
 
         /*--------------------------------------------------------------
-                                                                        # About
-                                                                        --------------------------------------------------------------*/
+                                                                                        # About
+                                                                                        --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -193,7 +194,7 @@
 
 
 
-    <div class="container py-5">
+    {{-- <div class="container py-5">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="cont rounded p-4 mb-4">
@@ -208,17 +209,13 @@
                     </div>
                 </div>
 
-
                 @foreach ($posts as $post)
                     <div class="card d-flex card-contentido cont">
                         <div class="card-content row justify-content-center align-items-center">
-                            {{-- <img class="card-img-top img-fluid" src="./assets/compiled/jpg/origami.jpg" alt="Card image cap"
-                            style="height: 20rem" /> --}}
                             <div class="col-4 card-image">
                                 <img class="img-fluid rounded-xl" src="{{ $post->image_url }}" alt="">
                             </div>
                             <div class="col-8 card-body">
-                                {{-- <h4 class="card-title">{{ $post->title }}</h4> --}}
                                 <p class="card-text">
                                     {{ $post->body }}
                                 </p>
@@ -234,32 +231,113 @@
                     <aside class="cont rounded p-4 mb-4">
                         <span class="font-weight-medium">Noticias Relacionadas</span>
                     </aside>
+
                     <div class="card-contentido cont bg-opacity-40 backdrop-blur-2xl rounded-2xl p-4">
-
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                <img src="assets/images/widgets/sm-2.jpg" alt="" class="img-fluid rounded-xl">
-
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                <div class="h-100 d-flex flex-column p-3">
-                                    <div class="w-100">
+                        @foreach ($posts as $post)
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 gap-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="position-relative">
+                                        <img src="{{ $post->image_url }}" alt="" class="img-fluid rounded-xl w-100">
                                         <span
-                                            class="text-sm bg-success bg-opacity-10 text-success rounded font-weight-medium py-0 px-2 inline-block mb-3">Fashion</span>
-                                        <span class="text-dark font-weight-medium text-xs ms-2">23 August 2023</span>
+                                            class="position-absolute top-0 end-0 text-dark font-weight-medium text-xs ms-2">{{ $post->created_at->format('d F Y') }}</span>
                                     </div>
-                                    <a href="#" class="text-lg font-weight-semibold text-secondary block">
-                                        This is the best Blogs card for your.
-                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                    <div class="h-100 d-flex flex-column p-3">
+                                        <a href="#" class="text-lg font-weight-semibold text-secondary block">
+                                            {{ \Illuminate\Support\Str::limit($post->body, 30) }}
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
+                        @endforeach
                     </div>
                 </section>
             </div>
         </div>
-    </div>
+    </div> --}}
+
+    <section class="mil-p-120-120">
+        <div class="container">
+            @foreach ($posts as $index => $post)
+                <div class="row justify-content-between align-items-center">
+                    @if ($index % 2 == 0)
+                        <!-- Imagen a la derecha, texto a la izquierda -->
+                        <div class="col-xl-6 mil-mb-60">
+                            <div class="mil-project-cover"><img src="{{ $post->image_url }}" alt="Project"></div>
+                        </div>
+                        <div class="col-xl-5 mil-mb-60">
+                            <span
+                                class="mil-suptitle mil-suptitle-2 mil-mb-30">{{ $post->created_at->format('d F Y') }}</span>
+                            <h3 class="mil-mb-30">{{ \Illuminate\Support\Str::limit($post->title, 30) }}</h3>
+                            {{-- <a class="mil-button-with-label" href="">
+                                <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span>
+                                </div>
+                                <span class="mil-dark">Mas información</span>
+                            </a> --}}
+                            <a class="mil-button-with-label" href="{{ route('news.show', ['id' => $post->id]) }}">
+                                <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span>
+                                </div>
+                                <span class="mil-dark">Mas información</span>
+                            </a>
+
+
+                        </div>
+                    @else
+                        <!-- Texto a la izquierda, imagen a la derecha -->
+                        <div class="col-xl-5 mil-mb-60">
+                            <span
+                                class="mil-suptitle mil-suptitle-2 mil-mb-30">{{ $post->created_at->format('d F Y') }}</span>
+                            <h3 class="mil-mb-30">{{ \Illuminate\Support\Str::limit($post->title, 30) }}</h3>
+                            <a class="mil-button-with-label" href="{{ route('news.show', ['id' => $post->id]) }}">
+                                <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span>
+                                </div>
+                                <span class="mil-dark">Mas información</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-6 mil-mb-60">
+                            <div class="mil-project-cover"><img src="{{ $post->image_url }}" alt="Project"></div>
+                        </div>
+                    @endif
+                </div>
+            @endforeach
+
+            <div class="mil-divider mil-mb-60"></div>
+            <div class="mil-pagination mil-hidden-arrows">
+                <div class="mil-slider-nav">
+                    @if ($posts->currentPage() > 1)
+                        <a href="{{ $posts->previousPageUrl() }}" class="mil-slider-btn-prev mil-blog-prev">
+                            <i class="fas fa-arrow-left"></i><span class="mil-h6">Anterior</span>
+                        </a>
+                    @else
+                        <div class="mil-slider-btn-prev mil-blog-prev mil-disabled">
+                            <i class="fas fa-arrow-left"></i><span class="mil-h6">Anterior</span>
+                        </div>
+                    @endif
+                </div>
+                <ul class="mil-pagination-numbers">
+                    @for ($i = 1; $i <= $posts->lastPage(); $i++)
+                        <li class="{{ $i == $posts->currentPage() ? 'mil-active' : '' }}">
+                            <a href="{{ $posts->url($i) }}">{{ $i }}</a>
+                        </li>
+                    @endfor
+                </ul>
+                <div class="mil-slider-nav">
+                    @if ($posts->hasMorePages())
+                        <a href="{{ $posts->nextPageUrl() }}" class="mil-slider-btn-next mil-blog-next">
+                            <span class="mil-h6">Siguiente</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    @else
+                        <div class="mil-slider-btn-next mil-blog-next mil-disabled">
+                            <span class="mil-h6">Siguiente</span><i class="fas fa-arrow-right"></i>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
 
