@@ -653,6 +653,55 @@ blockquote {
     color: #fff
 }
 
+.mil-links {
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none
+}
+
+.mil-links.mil-links-sm {
+    font-size: 14px
+}
+
+.mil-links i {
+    font-size: 12px;
+    color: #2A2D66;
+    margin-left: 15px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s cubic-bezier(0, 0, .3642, 1)
+}
+
+
+
+.mil-links:hover i {
+    transform: translateX(5px);
+    filter: brightness(115%)
+}
+
+.mil-links.link-left i {
+    margin-right: 15px;
+    margin-left: 0
+}
+
+.mil-links.link-left:hover i {
+    transform: translateX(-5px)
+}
+
+.mil-links.mil-light {
+    color: #fff
+}
+
 .mil-input-frame label {
     display: block;
     font-family: Syne, sans-serif;
@@ -4685,4 +4734,105 @@ footer, section {
 .mil-addition-bottom .container, .mil-addition-bottom .container-fluid {
     display: flex;
     justify-content: space-between
+}
+
+
+/* Mio */
+
+
+
+.content-news h1,
+.content-news li.breadcrumb-item.active,
+.breadcrumb-item+.breadcrumb-item::before,
+.content-news li.breadcrumb-item a {
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.content-news li.breadcrumb-item.active span:hover,
+.content-news li.breadcrumb-item a:hover {
+    color: #3454a2;
+    background: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.card-contentido {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+.cont {
+    /* background-color: #f6f9ff; */
+    background-color: #3453a228
+}
+
+.cont .card-image {
+    padding: 1rem 1rem;
+}
+
+
+.cont .card-image img {
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.cont .card-body p,
+.cont .card-body button {
+    margin-left: 1rem
+}
+
+/*--------------------------------------------------------------
+                                                                                # About
+                                                                                --------------------------------------------------------------*/
+.about .content {
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+.about h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.about p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+}
+
+.about .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+}
+
+.about .btn-read-more span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.about .btn-read-more i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.about .btn-read-more:hover i {
+    transform: translateX(5px);
 }

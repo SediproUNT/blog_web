@@ -181,7 +181,7 @@
                         <nav aria-label="breadcrumb" class="breadcrumb-header">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a style="text-decoration: none;"
-                                        href="{{ route('index') }}">Dashboard</a></li>
+                                        href="{{ route('index') }}">Inicio</a></li>
                                 <li class="breadcrumb-item active" aria-current="page"><span>Posts</span></li>
                             </ol>
                         </nav>

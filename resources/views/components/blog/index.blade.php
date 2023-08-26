@@ -253,7 +253,7 @@
 @endsection
 
 @section('scripts')
-    <script>
+    {{-- <script>
         function toggleReadMore(postId) {
             const readMoreSpan = document.getElementById('readMore' + postId);
             const readMoreLink = document.querySelector('.read-more-link');
@@ -266,7 +266,7 @@
                 readMoreLink.innerText = 'Ver más';
             }
         };
-    </script>
+    </script> --}}
 
 
     <script>

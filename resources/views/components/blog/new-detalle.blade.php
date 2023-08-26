@@ -5,6 +5,135 @@
 @endsection
 
 @section('styles')
+    <style>
+        .banner-box {
+            /* height: 352px; */
+            padding-top: 55px;
+            /* white-space: nowrap; */
+        }
+
+        .banner-news {
+            position: relative;
+            background-image: url('{{ asset('assets/img/banner-new.png') }}');
+            background-size: 1920px 180px;
+            background-position: center center;
+            height: 180px;
+        }
+
+        .banner-news::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .content-news {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content-news h1, .content-news span,
+        .content-news li.breadcrumb-item.active,
+        .breadcrumb-item+.breadcrumb-item::before,
+        .content-news li.breadcrumb-item a {
+            color: #fff;
+            transition: ease-in-out 0.3s;
+        }
+
+
+
+
+        .content-news li.breadcrumb-item.active span:hover,
+        .content-news li.breadcrumb-item a:hover {
+            color: #3454a2;
+            background: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .card-contentido {
+            margin: 2rem 0;
+            border-radius: 1rem;
+            border: none;
+        }
+
+
+        .cont {
+            /* background-color: #f6f9ff; */
+            background-color: #3453a228
+        }
+
+        .cont .card-image {
+            padding: 1rem 1rem;
+        }
+
+
+        .cont .card-image img {
+            border-radius: 1rem;
+            margin-left: 1rem;
+        }
+
+        .cont .card-body p,
+        .cont .card-body button {
+            margin-left: 1rem
+        }
+
+        /*--------------------------------------------------------------
+                                                                                            # About
+                                                                                            --------------------------------------------------------------*/
+        .about .content {
+            background-color: #f6f9ff;
+            padding: 40px;
+        }
+
+        .about h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #4154f1;
+            text-transform: uppercase;
+        }
+
+        .about h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #012970;
+        }
+
+        .about p {
+            margin: 15px 0 30px 0;
+            line-height: 24px;
+        }
+
+        .about .btn-read-more {
+            line-height: 0;
+            padding: 15px 40px;
+            border-radius: 4px;
+            transition: 0.5s;
+            color: #fff;
+            background: #4154f1;
+            box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+        }
+
+        .about .btn-read-more span {
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .about .btn-read-more i {
+            margin-left: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .about .btn-read-more:hover i {
+            transform: translateX(5px);
+        }
+    </style>
 @endsection
 
 
@@ -15,12 +144,29 @@
 
     @include('layouts.blog.modal_search')
 
+    <div class="banner-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 banner-box">
+                    <header class="banner-heading content-news">
+            <a class="mil-links link-left content-news" href="{{ route('news.index')}}"><i class="fas fa-arrow-left"></i><span>Todas las noticias</span></a>
+                        {{-- <h1 style="">{{ $post->title }}</h1> --}}
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <section class="mil-p-120-90">
         <div class="container">
             <div class="row flex-sm-row-reverse justify-content-between">
                 {{-- Aside --}}
                 <div class="col-lg-4 col-xl-3">
-                    <div class="mil-mb-60">
+                    <div class="mil-mb-60">F
                         <h5 class="mil-list-title mil-mb-30">Entradas recientes</h5>
                         @foreach ($recentPosts as $recentPost)
                             <a class="mil-post-sm mil-mb-15" href="{{ route('news.show', ['id' => $recentPost->id]) }}">
@@ -85,8 +231,8 @@
                     </div>
                 </a>
             @else
-                <div class="mil-slider-btn-prev mil-button-sm mil-blog-prev disabled">
-                    <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span>
+                <div class="mil-slider-nav"><a class="mil-slider-btn-prev mil-blog-prev disabled">
+                        <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span>
                 </div>
             @endif
 
