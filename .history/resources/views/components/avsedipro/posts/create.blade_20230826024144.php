@@ -52,12 +52,12 @@
 
 
 @section('script')
-    {{-- <!-- Agrega jQuery (Summernote depende de jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Agrega jQuery (Summernote depende de jQuery) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-    <!-- Agrega el JavaScript de Summernote -->
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+        <!-- Agrega el JavaScript de Summernote -->
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -73,5 +73,5 @@
                 // Puedes personalizar las opciones de la barra de herramientas según tus necesidades
             });
         });
-    </script> --}}
+    </script>
 @endsection

@@ -19,7 +19,7 @@
                         <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('news.index') }}">Noticias</a>
+                        <a class="nav-link" href="{{ route('') }}">Noticias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>

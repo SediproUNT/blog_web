@@ -27,6 +27,7 @@
                             </div>
 
 
+
                             <div class="mb-3">
                                 <label for="image" class="form-label">Imagen</label>
                                 <input id="image" type="file" class="form-control" name="image" required>
@@ -51,27 +52,3 @@
 @endsection
 
 
-@section('script')
-    {{-- <!-- Agrega jQuery (Summernote depende de jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <!-- Agrega el JavaScript de Summernote -->
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            // Inicializa Summernote en el elemento con ID "body"
-            $('#body').summernote({
-                height: 400, // Altura del editor
-                toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol']],
-                    ['insert', ['link', 'picture']],
-                    ['view', ['fullscreen', 'codeview']]
-                ]
-                // Puedes personalizar las opciones de la barra de herramientas según tus necesidades
-            });
-        });
-    </script> --}}
-@endsection

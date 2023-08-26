@@ -26,6 +26,10 @@
                                 <textarea class="form-control" id="body" name="body" required></textarea>
                             </div>
 
+                            <div class="mb-3">
+                                <label for="body" class="form-label">Body</label>
+                                <textarea id="body" name="body" required></textarea>
+                            </div>
 
                             <div class="mb-3">
                                 <label for="image" class="form-label">Imagen</label>
@@ -51,27 +55,31 @@
 @endsection
 
 
-@section('script')
-    {{-- <!-- Agrega jQuery (Summernote depende de jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <!-- Agrega el JavaScript de Summernote -->
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-
+@section('scripts')
     <script>
-        $(document).ready(function() {
-            // Inicializa Summernote en el elemento con ID "body"
-            $('#body').summernote({
-                height: 400, // Altura del editor
-                toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol']],
-                    ['insert', ['link', 'picture']],
-                    ['view', ['fullscreen', 'codeview']]
-                ]
-                // Puedes personalizar las opciones de la barra de herramientas según tus necesidades
-            });
-        });
-    </script> --}}
+document.addEventListener('DOMContentLoaded', function() {
+    tinymce.init({
+        selector: '#body', // ID del textarea
+        height: 400, // Altura del editor
+        menubar: false, // Desactivar barra de menú
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | bold italic backcolor | \
+            alignleft aligncenter alignright alignjustify | \
+            bullist numlist outdent indent | removeformat | help',
+        init_instance_callback: function(editor) {
+            // TinyMCE se ha inicializado, ahora puedes inicializar ApexCharts aquí
+            var options = {
+                // Opciones de configuración de ApexCharts
+            };
+            var chart = new ApexCharts(document.querySelector("#chart-container"), options);
+            chart.render();
+        }
+    });
+});
+
+    </script>
 @endsection

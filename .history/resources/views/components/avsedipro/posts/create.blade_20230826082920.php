@@ -26,6 +26,11 @@
                                 <textarea class="form-control" id="body" name="body" required></textarea>
                             </div>
 
+                            <div class="mb-3">
+                                <label for="body" class="form-label">Body</label>
+                                <textarea class="form-control" id="body" name="body" required></textarea>
+                            </div>
+
 
                             <div class="mb-3">
                                 <label for="image" class="form-label">Imagen</label>
@@ -52,7 +57,7 @@
 
 
 @section('script')
-    {{-- <!-- Agrega jQuery (Summernote depende de jQuery) -->
+    <!-- Agrega jQuery (Summernote depende de jQuery) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -73,5 +78,5 @@
                 // Puedes personalizar las opciones de la barra de herramientas según tus necesidades
             });
         });
-    </script> --}}
+    </script>
 @endsection

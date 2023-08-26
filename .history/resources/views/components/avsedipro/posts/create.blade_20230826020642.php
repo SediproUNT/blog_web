@@ -26,6 +26,21 @@
                                 <textarea class="form-control" id="body" name="body" required></textarea>
                             </div>
 
+                            <section class="section">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Bubble Editor</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Block some text to display options in poppovers </p>
+                                        <div id="bubble">
+                                            <p>Hello World!</p>
+                                            <p>Some initial <strong>bold</strong> text</p>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 
                             <div class="mb-3">
                                 <label for="image" class="form-label">Imagen</label>
@@ -51,27 +66,5 @@
 @endsection
 
 
-@section('script')
-    {{-- <!-- Agrega jQuery (Summernote depende de jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <!-- Agrega el JavaScript de Summernote -->
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            // Inicializa Summernote en el elemento con ID "body"
-            $('#body').summernote({
-                height: 400, // Altura del editor
-                toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol']],
-                    ['insert', ['link', 'picture']],
-                    ['view', ['fullscreen', 'codeview']]
-                ]
-                // Puedes personalizar las opciones de la barra de herramientas según tus necesidades
-            });
-        });
-    </script> --}}
-@endsection
+<script src="assets/extensions/quill/quill.min.js"></script>
+<script src="assets/static/js/pages/quill.js"></script>

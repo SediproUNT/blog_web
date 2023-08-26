@@ -83,8 +83,8 @@
         }
 
         /*--------------------------------------------------------------
-                                                                                                # About
-                                                                                                --------------------------------------------------------------*/
+                                                                                                    # About
+                                                                                                    --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -185,7 +185,7 @@
                         Sedipranas</span>
                     <h3 class="mil-mb-30">{{ $post->title }}</h3>
                     <p class="mil-mb-60">{{ $post->body }}</p>
-                    <img class="img-fluid" src="{{ $post->image_url }}" alt="">
+                    <img src="{{ $post->image_url }}" alt="">
 
                     {{-- <h3 class="mil-mb-30">Our Solution</h3>
                     <p class="mil-mb-60">There are many variations of passages of Lorem Ipsum available, but the majority
@@ -233,9 +233,8 @@
                     </div>
                 </a>
             @else
-
-                <div class="mil-slider-nav"><a class="mil-slider-btn-prev mil-blog-prev disabled">
-                        <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span></a>
+                <div class="mil-slider-btn-prev mil-button-sm mil-blog-prev disabled">
+                    <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span>
                 </div>
             @endif
 
@@ -251,6 +250,8 @@
             @endif
         </div>
     </div>
+
+
 
 
 
