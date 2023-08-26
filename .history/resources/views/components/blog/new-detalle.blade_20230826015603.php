@@ -233,9 +233,10 @@
                     </div>
                 </a>
             @else
-
+                <div class="mil-slider-btn-prev mil-button-sm mil-blog-prev disabled">
                 <div class="mil-slider-nav"><a class="mil-slider-btn-prev mil-blog-prev disabled">
-                        <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span></a>
+                            antiguos</span><i class="fas fa-arrow-right"></i></a></div>
+                            <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span>
                 </div>
             @endif
 

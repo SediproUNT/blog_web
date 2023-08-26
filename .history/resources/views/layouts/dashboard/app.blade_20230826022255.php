@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="{{ asset('assets/compiled/css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/compiled/css/app-dark.css') }}">
 
-    <!-- Agrega el CSS de Summernote -->
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.css" rel="stylesheet">
-
     @yield('css')
 
 </head>
@@ -371,14 +368,11 @@
 
 
     <!-- Need: Apexcharts -->
-    {{-- <script src="{{ asset('assets/extensions/apexcharts/apexcharts.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('assets/static/js/pages/dashboard.js') }}"></script> --}}
+    <script src="{{ asset('assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/static/js/pages/dashboard.js') }}"></script>
     @yield('script')
 
-
-
-
-
+    <script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
 </body>

@@ -16,10 +16,10 @@
                         <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
+                        <a class="nav-link" href="{{ route('new.') }}">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('news.index') }}">Noticias</a>
+                        <a class="nav-link" href="{{ route('evento') }}">Noticias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>

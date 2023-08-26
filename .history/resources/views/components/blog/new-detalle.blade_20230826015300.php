@@ -35,8 +35,7 @@
             z-index: 2;
         }
 
-        .content-news h1,
-        .content-news span,
+        .content-news h1, .content-news span,
         .content-news li.breadcrumb-item.active,
         .breadcrumb-item+.breadcrumb-item::before,
         .content-news li.breadcrumb-item a {
@@ -83,8 +82,8 @@
         }
 
         /*--------------------------------------------------------------
-                                                                                                # About
-                                                                                                --------------------------------------------------------------*/
+                                                                                            # About
+                                                                                            --------------------------------------------------------------*/
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -150,8 +149,7 @@
             <div class="row">
                 <div class="col-12 banner-box">
                     <header class="banner-heading content-news">
-                        <a class="mil-links link-left content-news" href="{{ route('news.index') }}"><i
-                                class="fas fa-arrow-left"></i><span>Todas las noticias</span></a>
+            <a class="mil-links link-left content-news" href="{{ route('news.index')}}"><i class="fas fa-arrow-left"></i><span>Todas las noticias</span></a>
                         {{-- <h1 style="">{{ $post->title }}</h1> --}}
                     </header>
                 </div>
@@ -233,9 +231,8 @@
                     </div>
                 </a>
             @else
-
                 <div class="mil-slider-nav"><a class="mil-slider-btn-prev mil-blog-prev disabled">
-                        <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span></a>
+                        <i class="fas fa-arrow-left"></i><span class="mil-h6">Más reciente</span>
                 </div>
             @endif
 
@@ -251,6 +248,8 @@
             @endif
         </div>
     </div>
+
+    <a class="mil-slider-nav" href="/project"><div class="mil-slider-btn-prev mil-button-sm mil-blog-prev"><i class="fas fa-arrow-left"></i><span class="mil-h6">Prev</span></div></a>
 
 
 
