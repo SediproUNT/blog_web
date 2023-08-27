@@ -63,10 +63,7 @@
             /* Ajusta este valor según necesites */
         }
 
-        /* .mil-card {
-                            display: grid;
-                            grid-template-rows: 1fr auto;
-                        } */
+
 
         .mil-cover-frame {
             grid-row: 1 / span 2;

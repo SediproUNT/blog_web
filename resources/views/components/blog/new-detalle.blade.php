@@ -7,15 +7,14 @@
 @section('styles')
     <style>
         .banner-box {
-            /* height: 352px; */
             padding-top: 55px;
-            /* white-space: nowrap; */
         }
 
         .banner-news {
             position: relative;
-            background-image: url('{{ asset('assets/img/banner-new.png') }}');
-            background-size: 1920px 180px;
+            background-image: url('{{ asset('assets/img/banner-new.webp') }}');
+            background-repeat: no-repeat;
+            background-size: cover;
             background-position: center center;
             height: 180px;
         }
@@ -82,9 +81,8 @@
             margin-left: 1rem
         }
 
-        /*--------------------------------------------------------------
-                                                                                                # About
-                                                                                                --------------------------------------------------------------*/
+        /*About */
+
         .about .content {
             background-color: #f6f9ff;
             padding: 40px;
@@ -163,7 +161,7 @@
 
 
 
-    <section class="mil-p-120-90">
+    <section class="mil-p-120-90 bg-light">
         <div class="container">
             <div class="row flex-sm-row-reverse justify-content-between">
                 {{-- Aside --}}

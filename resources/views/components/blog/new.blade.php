@@ -14,7 +14,7 @@
 
         .banner-news {
             position: relative;
-            background-image: url('{{ asset('assets/img/banner-new.png') }}');
+            background-image: url('{{ asset('assets/img/banner-new.webp') }}');
             background-size: 1920px 180px;
             background-position: center center;
             height: 180px;
@@ -150,26 +150,6 @@
         </div>
     @endforeach --}}
 
-    {{-- <div class="noticias">
-        <article>
-            <header>
-                <h2>Titulo de la noticia 1</h2>
-                <p><time datetime="2023-08-20">20 Agosto, 2023</time></p>
-            </header>
-            <img src="ruta/a/imagen.jpg" alt="Descripción de la imagen">
-            <p>Contenido de la noticia 1...</p>
-        </article>
-
-        <article>
-            <header>
-                <h2>Titulo de la noticia 2</h2>
-                <p><time datetime="2023-08-20">20 Agosto, 2023</time></p>
-            </header>
-            <img src="ruta/a/imagen2.jpg" alt="Descripción de la imagen">
-            <p>Contenido de la noticia 2...</p>
-        </article>
-        <!-- Repite la estructura del artículo para cada noticia que quieras mostrar -->
-    </div> --}}
 
 
     <div class="banner-news">
@@ -257,7 +237,7 @@
         </div>
     </div> --}}
 
-    <section class="mil-p-120-120">
+    <section class="mil-p-120-120 bg-light">
         <div class="container">
             @foreach ($posts as $index => $post)
                 <div class="row justify-content-between align-items-center">

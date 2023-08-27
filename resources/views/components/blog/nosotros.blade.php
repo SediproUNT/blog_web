@@ -14,7 +14,7 @@
 
         .banner-news {
             position: relative;
-            background-image: url('{{ asset('assets/img/Banner nosotros.png') }}');
+            background-image: url('{{ asset('assets/img/banner-nosotros.webp') }}');
             background-size: 1920px 180px;
             background-position: center center;
             height: 180px;
@@ -75,7 +75,7 @@
 
                 <div class="col-lg-6 text-justify">
                     <span class="text-nosotros">
-                        Somos la Sección Estudiantil de Dirección de Proyectos de la UNT, equipo multidisciplinario
+                        Somos la Sección Estudiantil de Dirección de Proyectos de la Universidad Nacional de Trujillo, equipo multidisciplinario
                         orientado a digundir las buenas prácticas en gestión de proyectos con métodología PMI y herramientas ágiles,
                         bajo 3 enfoques académico,social y ambiental.
                     </span>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
         
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-center">
                     <img src="/assets/img/logo-sedipro.png" alt="logo_sedipro" class="img-fluid">
                 </div>
 

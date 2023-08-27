@@ -14,7 +14,7 @@
 
     .banner-news {
     position: relative;
-    background-image: url('{{ asset('assets/img/Banner contactos.png') }}');
+    background-image: url('{{ asset('assets/img/banner-contactos.webp') }}');
     background-size: 1920px 180px;
     background-position: center center;
     height: 180px;
